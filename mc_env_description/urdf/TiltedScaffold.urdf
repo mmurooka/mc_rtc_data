@@ -77,7 +77,7 @@
   <joint name="RightGroundBlock" type="fixed">
     <parent link="base_link" />
     <child link="RightGroundBlock" />
-    <origin xyz="0.35 -0.2 0.1" rpy="-0.5236 0 0"/>
+    <origin xyz="0.35 -0.2 0.1" rpy="-0.4363 0 0"/>
     <!-- <origin xyz="0.35 -0.2 0.1" rpy="-0.349 0 0"/> -->
   </joint>
 
@@ -104,7 +104,7 @@
   <joint name="LeftGroundBlock" type="fixed">
     <parent link="base_link" />
     <child link="LeftGroundBlock" />
-    <origin xyz="1.25 0.2 0.1" rpy="0.5236 0 0"/>
+    <origin xyz="1.25 0.2 0.1" rpy="0.4363 0 0"/>
     <!-- <origin xyz="1.25 0.2 0.1" rpy="0.349 0 0"/> -->
   </joint>
 </robot>
