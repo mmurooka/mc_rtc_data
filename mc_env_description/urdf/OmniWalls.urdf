@@ -1,0 +1,108 @@
+<?xml version="1.0" ?>
+<robot name="OmniWalls">
+  <link name="base_link" />
+
+  <link name="LeftSideWall">
+    <visual>
+      <origin xyz="0 0.01 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.2 0.02 0.2"/>
+      </geometry>
+      <material name="XXX">
+        <color rgba="0.3 0.5 0.2 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0.01 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.2 0.02 0.2"/>
+      </geometry>
+      <material name="XXX">
+        <color rgba="0.3 0.5 0.2 1" />
+      </material>
+    </collision>
+  </link>
+  <joint name="LeftSideWall" type="fixed">
+    <parent link="base_link" />
+    <child link="LeftSideWall" />
+    <origin xyz="0.0 1.0 1.0" rpy="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="RightSideWall">
+    <visual>
+      <origin xyz="0 -0.01 0.0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.2 0.02 0.2"/>
+      </geometry>
+      <material name="XXX">
+        <color rgba="0.3 0.5 0.2 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.01 0.0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.2 0.02 0.2"/>
+      </geometry>
+      <material name="XXX">
+        <color rgba="0.3 0.5 0.2 1" />
+      </material>
+    </collision>
+  </link>
+  <joint name="RightSideWall" type="fixed">
+    <parent link="base_link" />
+    <child link="RightSideWall" />
+    <origin xyz="0.0 -1.0 1.0" rpy="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="LeftFrontWall">
+    <visual>
+      <origin xyz="0 0.01 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.2 0.02 0.2"/>
+      </geometry>
+      <material name="XXX">
+        <color rgba="0.3 0.5 0.2 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0.01 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.2 0.02 0.2"/>
+      </geometry>
+      <material name="XXX">
+        <color rgba="0.3 0.5 0.2 1" />
+      </material>
+    </collision>
+  </link>
+  <joint name="LeftFrontWall" type="fixed">
+    <parent link="base_link" />
+    <child link="LeftFrontWall" />
+    <origin xyz="0.7 0.7 1.0" rpy="0.0 0.0 -0.7854" />
+  </joint>
+
+  <link name="RightFrontWall">
+    <visual>
+      <origin xyz="0 0.01 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.2 0.02 0.2"/>
+      </geometry>
+      <material name="XXX">
+        <color rgba="0.3 0.5 0.2 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0.01 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.2 0.02 0.2"/>
+      </geometry>
+      <material name="XXX">
+        <color rgba="0.3 0.5 0.2 1" />
+      </material>
+    </collision>
+  </link>
+  <joint name="RightFrontWall" type="fixed">
+    <parent link="base_link" />
+    <child link="RightFrontWall" />
+    <origin xyz="0.7 -0.7 1.0" rpy="0.0 0.0 0.7854" />
+  </joint>
+</robot>
