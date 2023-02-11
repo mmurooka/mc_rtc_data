@@ -4,6 +4,7 @@
 
     <link name="ground">
     <visual>
+      <origin rpy="0.0 0.0 0.0" xyz="20.0 0.0 0.0" />
       <geometry>
         <mesh filename="package://mc_env_description/meshes/ground/ground.stl" />
       </geometry>
