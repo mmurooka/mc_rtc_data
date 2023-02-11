@@ -4,13 +4,23 @@
 
     <link name="ground">
     <visual>
+      <origin rpy="0.0 0.0 0.0" xyz="20.0 0.0 0.0" />
       <geometry>
-        <mesh filename="package://mc_env_description/meshes/ground/ground.stl" />
+        <box size="20.0 20.0 0.1" />
       </geometry>
       <material name="XXX">
         <color rgba="0.5394796133041382 0.7230552434921265 0.7454043626785278 1" />
       </material>
     </visual>
+    <collision>
+      <origin rpy="0.0 0.0 0.0" xyz="20.0 0.0 0.0" />
+      <geometry>
+        <box size="20.0 20.0 0.1" />
+      </geometry>
+      <material name="XXX">
+        <color rgba="0.5394796133041382 0.7230552434921265 0.7454043626785278 1" />
+      </material>
+    </collision>
 
   </link>
   <joint name="ground" type="fixed">
