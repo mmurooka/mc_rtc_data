@@ -1207,4 +1207,46 @@
     <child link="l_ankle"/>
   </joint>
   <link name="l_ankle"/>
+  <joint name="jvrc1_back_tactile_sensor" type="fixed">
+    <origin rpy="0.0 1.44 0.0" xyz="-0.075 0.0 0.2"/>
+    <parent link="WAIST_R_S"/>
+    <child link="jvrc1_back_tactile_sensor"/>
+  </joint>
+  <link name="jvrc1_back_tactile_sensor"/>
+  <joint name="jvrc1_right_elbow_tactile_sensor" type="fixed">
+    <origin rpy="0 1.5708 0" xyz="-0.06975397769348207 0 -0.0720193897773116"/>
+    <parent link="R_ELBOW_P_S"/>
+    <child link="jvrc1_right_elbow_tactile_sensor"/>
+  </joint>
+  <link name="jvrc1_right_elbow_tactile_sensor"/>
+  <joint name="jvrc1_left_knee_tactile_sensor" type="fixed">
+    <origin rpy="3.141590255540823 -1.5204375874732723 -3.1415901265290733" xyz="0.11161884184098951 -3.042248147844262e-09 -0.1063933713699532"/>
+    <parent link="L_KNEE_S"/>
+    <child link="jvrc1_left_knee_tactile_sensor"/>
+  </joint>
+  <link name="jvrc1_left_knee_tactile_sensor"/>
+  <joint name="jvrc1_left_thigh_tactile_sensor" type="fixed">
+    <origin rpy="0 1.5242809442976415 0" xyz="-0.0677307381928566 0 -0.20450757563611333"/>
+    <parent link="L_HIP_Y_S"/>
+    <child link="jvrc1_left_thigh_tactile_sensor"/>
+  </joint>
+  <link name="jvrc1_left_thigh_tactile_sensor"/>
+  <joint name="jvrc1_right_thigh_tactile_sensor" type="fixed">
+    <origin rpy="0 1.5242809442976415 0" xyz="-0.0677307381928566 0 -0.20450757563611333"/>
+    <parent link="R_HIP_Y_S"/>
+    <child link="jvrc1_right_thigh_tactile_sensor"/>
+  </joint>
+  <link name="jvrc1_right_thigh_tactile_sensor"/>
+  <joint name="jvrc1_left_foot_tactile_sensor" type="fixed">
+    <origin rpy="0 0 0" xyz="0.030310330912470818 -0.001216750591993332 -0.10773589462041855"/>
+    <parent link="L_ANKLE_P_S"/>
+    <child link="jvrc1_left_foot_tactile_sensor"/>
+  </joint>
+  <link name="jvrc1_left_foot_tactile_sensor"/>
+  <joint name="jvrc1_right_foot_tactile_sensor" type="fixed">
+    <origin rpy="0 0 0" xyz="0.030310330912470818 -0.001216750591993332 -0.10773589462041855"/>
+    <parent link="R_ANKLE_P_S"/>
+    <child link="jvrc1_right_foot_tactile_sensor"/>
+  </joint>
+  <link name="jvrc1_right_foot_tactile_sensor"/>
 </robot>
