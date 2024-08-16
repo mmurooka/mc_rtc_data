@@ -1226,13 +1226,13 @@
   </joint>
   <link name="jvrc1_left_knee_tactile_sensor"/>
   <joint name="jvrc1_left_thigh_tactile_sensor" type="fixed">
-    <origin rpy="0 1.5242809442976415 0" xyz="-0.0677307381928566 0 -0.20450757563611333"/>
+    <origin rpy="0 1.5242809442976415 0" xyz="-0.0677307381928566 0 -0.17450757563611333"/>
     <parent link="L_HIP_Y_S"/>
     <child link="jvrc1_left_thigh_tactile_sensor"/>
   </joint>
   <link name="jvrc1_left_thigh_tactile_sensor"/>
   <joint name="jvrc1_right_thigh_tactile_sensor" type="fixed">
-    <origin rpy="0 1.5242809442976415 0" xyz="-0.0677307381928566 0 -0.20450757563611333"/>
+    <origin rpy="0 1.5242809442976415 0" xyz="-0.0677307381928566 0 -0.17450757563611333"/>
     <parent link="R_HIP_Y_S"/>
     <child link="jvrc1_right_thigh_tactile_sensor"/>
   </joint>
